@@ -1,0 +1,352 @@
+@font-face {
+    font-family: code128;
+    src: url(../assets/fonts/code128.ttf);
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #E8E8E8;
+	font-size: 14px;
+}
+
+#modalContainer {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,.3);
+}
+
+#modalBody {
+	height: auto;
+	min-height: 400px;
+	max-height: 800px;
+	overflow: auto;
+	width: 800px;
+	background-color: white;
+	border: 1px solid rgba(0,0,0,.4);
+	margin: 100px auto 0px auto;
+	border-radius: 3px;
+}
+
+#modalHeader {
+	height: 20px;
+	width: calc(100% - 16px);
+	padding: 4px 8px;
+	font-size: 14px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	margin-bottom: 8px;
+	background-color: #E4EEF4;
+}
+
+#modalTitle {
+	float: left;
+	height: auto;
+	width: auto;
+	height: 18px;
+	padding-top: 2px;
+}
+
+#modalClose {
+	float: right;
+	
+}
+
+#modalContent {
+	padding: 0px 8px 0px 8px;
+	height: auto;
+	font-size: 14px;
+	width: calc(100% - 16px);
+}
+
+h2 {
+	font-size: 21px;
+	font-weight: 400;
+	margin: 0px;
+	margin-bottom: 4px;
+}
+
+#heading {
+	height: 32px;
+	width: 100%;
+	background-color: #0076CC;
+}
+
+#menu {
+	width: 1280px;
+	margin: 0px auto 0px auto;
+	height: 32px;
+	clear: both;
+}
+
+#menu a {
+	display: block;
+	color: white;
+	margin-right: 8px;
+	margin-top: 4px;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 2px;
+	padding: 2px 16px 2px 16px;
+	text-decoration: none;
+	background-color: rgba(256,256,256,.2);
+	float: left;
+	font-size: 14px;
+}
+
+#menu a:hover {
+	border: 1px solid rgba(0,0,0,.4);
+}
+
+#menu a:last-of-type {
+	margin-right: 0px;
+	float: right;
+}
+
+#footer {
+	height: 32px;
+	width: 100%;
+	background-color: #0076CC;
+}
+
+#container {
+	height: auto;
+	min-height: calc(100% - 64px);
+	width: 100%;
+	
+}
+
+#content {
+	width: 1248px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,.4);
+	margin: 0px auto 0px auto;
+	padding: 16px;
+	background-color: white;
+}
+
+.floatRight {
+	float: right;
+}
+
+table {
+	border: 1px solid rgba(0,0,0,.2);
+	padding: 0px;
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+	margin-bottom: 16px;
+	border-radius: 2px;
+}
+
+tr {
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+td {
+	height: 14px;
+	vertical-align: middle;
+	padding: 4px;
+	font-size: 14px;
+}
+
+td:first-child {
+	width: 20%;
+}
+
+th {
+	height: 24px;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 14px;
+	padding-left: 4px;
+	font-weight: 100;
+}
+
+thead {
+	background-color: #E4EEF4;
+	display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+tbody {
+	margin-bottom: 12px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgba(128,128,128,.05);
+}
+
+button {
+	padding: 2px 16px 2px 16px;
+	border-radius: 2px;
+	border: 1px solid rgba(0,0,0,.2);
+	background-color: #DAFFE1;
+	font-size: 12px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+}
+
+button:hover {
+	border: 1px solid rgba(0,0,0,.4);
+}
+
+td button {
+	float: right;
+}
+
+divider {
+	display: block;
+	width: calc(100% + 32px);
+	height: 0px;
+	border-top: 1px solid rgba(0,0,0,.1);
+	margin: 16px 0px 16px -16px;
+}
+
+#history tr td:first-child, #history tr th:first-child {
+	width: 10%;
+}
+
+
+
+#ediTextDisplay {
+	height: 280px;
+	width: calc(100% - 10px);
+	padding: 4px;
+	border: 1px solid rgba(0,0,0,.2);
+	margin-bottom: 6px;
+	margin-top: 16px;
+}
+
+
+
+/* Label Properties */
+b {
+	display: block;
+	margin-bottom: .085in;
+}
+#labelBody {
+	height: 6in;
+	width: 4in;
+	text-transform: uppercase;
+	background-color: white;
+	font-size: 10pt;
+}
+
+#hDivider {
+	height: 0in;
+	width: 100%;
+	border-top: 1px solid black;
+	clear: both;
+}
+
+#fromBlock {
+	float: left;
+	padding: .085in;
+	width: 1.205in;
+	height: 1in;
+	border-right: 1px solid black;
+}
+
+#tooBlock {
+	float: left;
+	padding: .085in;
+}
+
+#postalCodeBlock {
+	float: left;
+	padding: .085in;
+	width: 2.33in;
+	height: .83in;
+	border-right: 1px solid black;
+}
+
+#postalCodeText {
+	width: 100%;
+	text-align: center;
+}
+
+#postalCodeBar {
+	width: 100%;
+	text-align: center;
+	font-family: code128;
+	font-size: 64pt;
+	height: .55in;
+	overflow: hidden;
+	margin-top: -.085in;
+}
+
+#carrierBlock {
+	float: left;
+	padding: .085in;
+}
+
+#poBlock {
+	float: left;
+	padding: .085in;
+	font-size: 24pt;
+	font-weight: bold;
+	
+}
+
+#storeBlock {
+	float: right;
+	padding: .085in;
+	height: .83in;
+	width: 1.83in;
+}
+
+#storeBlock b {
+	display: inline-block;
+}
+
+#storeBlock span {
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+#storeNumber {
+	display: inline-block;
+	font-size: 24pt;
+	font-weight: bold;
+	float: right;
+	width: 1.2in;
+	float: right;
+}
+
+
+
+#ssccBlock {
+	width: 100%;
+	float: left;
+	padding: .085in;
+}
+
+#sscc {
+	width: calc(100% - .17in);
+	text-align: center;
+	margin-bottom: .25in;
+}
+
+#ssccBarCode {
+	width: calc(100% - .05in);
+	height: 1in;
+	font-family: code128;
+	text-align: center;
+	font-size: 54pt;
+	transform : scale(1,1.5);
+	margin-top: .125in;
+}
+

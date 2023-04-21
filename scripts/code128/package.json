@@ -1,0 +1,27 @@
+{
+  "name": "code-128-encoder",
+  "version": "2.2.0",
+  "description": "an optimizing encoder for your commandline, node.js and your browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "bin": {
+    "encode128": "./encode128"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holger-Will/code-128-encoder.git"
+  },
+  "keywords": [
+    "code 128",
+    "encoder",
+    "barcode"
+  ],
+  "author": "Holger Will",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holger-Will/code-128-encoder/issues"
+  },
+  "homepage": "https://github.com/Holger-Will/code-128-encoder#readme"
+}

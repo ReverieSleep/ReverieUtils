@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<style>
+@font-face {
+    font-family: code128;
+    src: url("assets/fonts/code128.ttf");
+}
+
+* {
+	padding: 0in;
+	margin: 0in;
+	font-size: 10pt;
+}
+
+@page {
+	margin: 0in;
+}
+
+body {
+	font-family: Arial;
+	
+	
+}	
+	
+	td {
+		vertical-align: top;
+	}
+	
+	#slipContainer {
+		height: 10.5in;
+		width: 8in;
+		page-break-after: always;
+		margin: .25in;
+	}
+
+	
+	#logo {
+		height: auto;
+		width: auto;
+		float: left;
+		margin-right: .5in;
+	}
+	
+	#orderHeader {
+		height: auto;
+		width: auto;
+	}
+	
+	#orderHeader td {
+		padding-right: .25in;
+		height: .25in;
+	}
+	
+	#pagination {
+		float: right;
+		margin-bottom: .0625in;
+	}
+	
+	#orderBody {
+		border: 1px solid black;	
+		border-top: none;
+		height: 8.5in;
+		position: relative;
+	}
+	
+	#orderMerchandise {
+		position: relative;
+		height: auto;
+		min-height: 2in;
+	}
+	
+	#orderMessage {
+		height: auto;
+		min-height: .75in;
+	}
+	
+	#returns {
+		
+	}
+	
+	#orderedBy {
+		position: absolute;
+		bottom: .25in;
+		left: .0625in;
+		height: auto;
+		min-height: 1in;
+		width: 3.75in;
+		border: 1px solid black;
+		border-top: none;
+	}
+	
+	#shipTo {
+		position: absolute;
+		bottom: .25in;
+		right: .0625in;
+		height: auto;
+		min-height: 1in;
+		width: 3.75in;
+		border: 1px solid black;
+		border-top: none;
+	}
+	
+	
+	.sectionHeading {
+		font-weight: bold;
+		background-color: gray;
+		border-bottom: 1px solid black;
+		border-top: 1px solid black;
+		margin-bottom: .125in;
+		padding: 0.03125in;
+	}
+	
+	
+	#orderMerchandise table {
+		border-collapse: collapse;
+		border-top: 1px solid black;
+	}
+	#orderMerchandise thead tr {
+		font-weight: bold;
+		background-color: gray;
+		border-bottom: 1px solid black;
+	}
+	
+	#orderMerchandise td {
+		padding: 0.03125in;
+	}
+
+	
+	.floatLeft {
+		float: left;
+	}
+	
+	.floatRight {
+		float: right;
+	}
+	
+	.clear {
+		clear: both;
+	}
+	
+	#orderBody p {
+		margin: .0625in;
+	}
+	
+	#bbbLogo {
+		width: 2in;
+		margin-left: -.5in;
+		margin-right: .5in;
+	}
+	
+	#thankYouMessage {
+		position: absolute;
+		bottom: .4in;
+	}
+
+</style>
+
+<body>
+	<div id="slipContainer">
+		<div id="logo">
+			<img src="bbb/bbBaby-logobw.jpg" id="bbbLogo"/>
+			<br />
+			<br />
+			<u>www.buybuybaby.com</u><br />
+			1-877-3-BUY-BABY&reg;<br />
+			1-877-328-9222
+		</div>
+
+		<div id="orderHeader">
+			<table>
+				<tr>
+					<td><strong>Order Number</strong></td>
+					<td>CCC255737</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><strong>PO Number</strong></td>
+					<td>AB21752255</td>
+					<td><strong>Warehouse</strong></td>
+					<td>N/A</td>
+				</tr>
+				<tr>
+					<td><strong>Order Date</strong></td>
+					<td>02/23/2017</td>
+					<td><strong>Shipping Service</strong></td>
+					<td>Fedex Smart</td>
+				</tr>
+				<tr>
+					<td><strong>Process Date</strong></td>
+					<td>02/23/2017</td>
+					<td><strong>Payment Method</strong></td>
+					<td>CC</td>
+				</tr>
+
+				<tr>
+					<td colspan="4">
+						This item(s) is being shipped from one of our vedors.  If the item(s)<br />
+						does not meet your satisfaction please follow the return instructions below.<br />
+						Questions?  Call 1-877-3-BUY-BABY for assistance.
+					</td>
+				</tr>
+			</table>
+			
+			<br />
+		</div>
+		<div class="clear"></div>
+		
+		<div id="pagination">Page 1 of 1</div>
+		
+		<div class="clear"></div>
+		<div id="orderBody">
+
+			<div id="orderMerchandise">
+				<table width="100%">
+					<thead>
+						<tr>
+							<td>QTY</td>
+							<td>Item Number/UPC</td>
+							<td>Item Description</td>
+							<td>Color/Size</td>
+							<td>Vendor Part #</td>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr><!-- loop through each item -->
+							<td>2</td>
+							<td>9999999990201</td>
+							<td>
+								Sample item description for line 1
+								<br />
+								Reg ID: 13579
+							</td>
+							<td></td>
+							<td>10000025</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p id="thankYouMessage">Thank you for shopping online.</p>
+			</div>
+
+			<div id="orderMessage">
+				<div class="sectionHeading">Gift Message</div>
+				<center></center>
+			</div>
+			
+			<div id="returns">
+				<div class="sectionHeading">Return Information</div>
+				<p>Questions about exchanges or returns?  Please hold onto this packing slip as your receipt and
+				visit our website at www.buybuybaby.com/returns or contact us at 1.877.3 BUY BABY for more
+				information.
+				<br />
+				Customized/personalized products are not returnable.</p>
+			</div>
+			
+			<div id="orderedBy">
+				<div class="sectionHeading">Ordered By</div>
+				<p>
+					Paula Jones<br />
+					XYZ Company<br />
+					9 Main St<br />
+					Apt 9<br />
+					Moab, UT 84532
+				</p>
+			</div>
+			
+			<div id="shipTo">
+				<div class="sectionHeading">Ship To</div>
+				
+				<p>
+					John Smith<br />
+					ABC Company Name<br />
+					PSC 901 BOX 50<br />
+					FPO, AE 09805<br />
+					<br />
+				</p>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
